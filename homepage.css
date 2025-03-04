@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "georgia", sans-serif;
+    background: linear-gradient(to right, #091366, #060e28);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+#about {
+    min-height: 100vh;
+}
+
+#about h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.about-heading p {
+    font-size: 36px;
+    margin: 0;
+}
+
+.about-heading .my-name {
+    margin-bottom: 1rem;
+    color: #886ab5;
+}
+
+.photo img {
+    width: 30vw;
+    height: auto;
+}
+
+.about-para {
+    font-size: 18px;
+    margin-bottom: 3rem;
+}
+
+.about-para span {
+    color: #886ab5;
+    font-size: 24px;
+}
+
+.skills {
+    font-size: 18px;
+}
+
+.skills h3 {
+    color: #886ab5;
+}
+
+#projects h2 {
+    text-align: center;
+}
+
+.project-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-items {
+    background-color: white;
+    width: 220px;
+    height: auto;
+}
+
+.project-items img {
+    width: 200px;
+    height: auto;
+}

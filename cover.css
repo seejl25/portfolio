@@ -1,0 +1,58 @@
+body {
+    /* background: linear-gradient(to right, #1f123e, #321d5e); */
+    background: linear-gradient(to right, #091366, #060e28);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "georgia", sans-serif;
+}
+
+.icons {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+
+.icons a{
+    color: white;
+}
+
+.fa-github:hover {
+    transform: translateY(-10px);
+}
+
+.fa-linkedin:hover {
+    transform: translateY(-10px);
+}
+
+.welcome, .portfolio {
+    margin: 0;
+    font-size: 3rem;
+    color: white;
+}
+
+.portfolio {
+    color: #886ab5;
+    margin-top: 10px;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: #886ab5;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.4);
+}
