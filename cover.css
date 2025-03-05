@@ -10,6 +10,10 @@ body {
     font-family: "georgia", sans-serif;
 }
 
+body:hover {
+    transition: all ease 1s;
+}
+
 .icons {
     font-size: 2rem;
     display: flex;
