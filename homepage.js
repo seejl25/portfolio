@@ -44,6 +44,14 @@ projectItems.forEach(eachItem => {
                 newPara.textContent = "";
             })
         }
+        else if (eachItem.children[1].firstElementChild.textContent === "Sign-up form") {
+            const newPara = document.createElement("p");
+            newPara.textContent = "A sign-up form that tests my styling skills. Find out more by clicking the buttons!"
+            eachItem.children[1].appendChild(newPara);
+            eachItem.addEventListener("mouseleave", () => {
+                newPara.textContent = "";
+            })
+        }
     })
 })
 
