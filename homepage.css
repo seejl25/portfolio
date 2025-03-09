@@ -53,31 +53,54 @@ nav a {
 .about-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 3rem;
 }
 
+.text {
+    margin-top: 4rem;
+}
+
 .about-heading p {
-    font-size: 36px;
+    font-size: 24px;
     margin: 0;
 }
 
 .about-heading .my-name {
+    font-size: 36px;
     margin-bottom: 1rem;
     color: #886ab5;
 }
 
 .photo img {
-    width: 30vw;
+    width: 20vw;
     height: auto;
+    border-radius: 25%;
 }
 
 .photo {
-    box-shadow: 0 8px 10px #886ab5;
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: glow 5000ms infinite;
+}
+
+@keyframes glow {
+    0%, 50%, 100% {
+        box-shadow: 0 8px 8px 3px #886ab5;
+    }
+    25%, 75% {
+        box-shadow: none;
+    }
 }
 
 .about-para {
     font-size: 18px;
     margin-bottom: 3rem;
+    line-height: 1.5rem;
 }
 
 .about-para span {
@@ -87,6 +110,7 @@ nav a {
 
 .skills {
     font-size: 18px;
+    margin-top: 5rem;
 }
 
 .skills h3 {
@@ -98,21 +122,13 @@ nav a {
 }
 
 .project-container {
-   display: flex;
-   flex-direction: column;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-rows: 1fr;
+   gap: 1.5rem;
    padding: 1.5rem;
 }
 
-.row1 {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
-}
-
-.row2 {
-    display: flex;
-    justify-content: space-evenly;
-}
 
 .project-items {
     background-color: transparent;
@@ -129,10 +145,7 @@ nav a {
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
-}
-
-.project-items:hover {
-    transform: translateY(-10px);
+    margin-bottom: 5px;
 }
 
 .project-items a {
@@ -144,6 +157,11 @@ nav a {
     font-weight: bold;
     font-size: 18px;
     background-color: transparent;
+}
+
+.project-items button a {
+    text-decoration: none;
+    color: #886ab5;
 }
 
 .details {
