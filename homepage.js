@@ -60,6 +60,14 @@ projectItems.forEach(eachItem => {
                 newPara.textContent = "";
             })
         }
+        else if (eachItem.children[3].firstElementChild.textContent === "My Library") {
+            const newPara = document.createElement("p");
+            newPara.textContent = "A library page that displays and adds books using Javascript. Find out more by clicking the buttons!"
+            eachItem.children[3].appendChild(newPara);
+            eachItem.addEventListener("mouseleave", () => {
+                newPara.textContent = "";
+            })
+        }
     })
 })
 
