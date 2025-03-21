@@ -76,6 +76,14 @@ projectItems.forEach(eachItem => {
                 newPara.textContent = "";
             })
         }
+        else if (eachItem.children[3].firstElementChild.textContent === "Restaurant Webpage") {
+            const newPara = document.createElement("p");
+            newPara.textContent = "A restaurant webpage built using npx webpack, import and exporting of JS scripts. Find out more by clicking the buttons!"
+            eachItem.children[3].appendChild(newPara);
+            eachItem.addEventListener("mouseleave", () => {
+                newPara.textContent = "";
+            })
+        }
     })
 })
 
