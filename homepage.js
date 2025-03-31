@@ -84,6 +84,14 @@ projectItems.forEach(eachItem => {
                 newPara.textContent = "";
             })
         }
+        else if (eachItem.children[3].firstElementChild.textContent === "To-Do List") {
+            const newPara = document.createElement("p");
+            newPara.textContent = "A to-do list that allows user to create projects and tasks they need to do. Find out more by clicking the buttons!"
+            eachItem.children[3].appendChild(newPara);
+            eachItem.addEventListener("mouseleave", () => {
+                newPara.textContent = "";
+            })
+        }
     })
 })
 
