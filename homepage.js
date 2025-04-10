@@ -36,22 +36,6 @@ projectItems.forEach(eachItem => {
                 newPara.textContent = "";
             })
         }
-        else if (eachItem.children[3].firstElementChild.textContent === "Tuition Webpage") {
-            const newPara = document.createElement("p");
-            newPara.textContent = "First ever webpage after learning basic HTML and CSS. Find out more by clicking the buttons!"
-            eachItem.children[3].appendChild(newPara);
-            eachItem.addEventListener("mouseleave", () => {
-                newPara.textContent = "";
-            })
-        }
-        else if (eachItem.children[3].firstElementChild.textContent === "Etch-a-sketch") {
-            const newPara = document.createElement("p");
-            newPara.textContent = "A sketch grid that tests my knowledge of flexbox. Find out more by clicking the buttons!"
-            eachItem.children[3].appendChild(newPara);
-            eachItem.addEventListener("mouseleave", () => {
-                newPara.textContent = "";
-            })
-        }
         else if (eachItem.children[3].firstElementChild.textContent === "Sign-up form") {
             const newPara = document.createElement("p");
             newPara.textContent = "A sign-up form that tests my styling skills. Find out more by clicking the buttons!"
@@ -87,6 +71,14 @@ projectItems.forEach(eachItem => {
         else if (eachItem.children[3].firstElementChild.textContent === "To-Do List") {
             const newPara = document.createElement("p");
             newPara.textContent = "A to-do list that allows user to create projects and tasks they need to do. Find out more by clicking the buttons!"
+            eachItem.children[3].appendChild(newPara);
+            eachItem.addEventListener("mouseleave", () => {
+                newPara.textContent = "";
+            })
+        }
+        else if (eachItem.children[3].firstElementChild.textContent === "Weather") {
+            const newPara = document.createElement("p");
+            newPara.textContent = "A weather page that allows users to check weather conditions for different locations. Find out more by clicking the buttons!"
             eachItem.children[3].appendChild(newPara);
             eachItem.addEventListener("mouseleave", () => {
                 newPara.textContent = "";
